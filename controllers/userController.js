@@ -1,10 +1,13 @@
+const jwt = require('jsonwebtoken')
+
 const userController = () => {
   const login = async (req, res, next) => {
     try {
       const sampleData = {
         username: 'hoangtran'
       }
-      return res.status(200).json({ user: sampleData, token: '' })
+      const token = jwt.sign(sampleData, 'shhhhh', { expiresIn: '1h' })
+      return res.status(200).json({ user: sampleData, token })
     } catch (error) {
       return res.status(500).json({ message: `${JSON.stringify(error)}` })
     }

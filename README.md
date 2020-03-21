@@ -1,10 +1,11 @@
-# Nodejs Express demo express-starter
+# Nodejs Express demo express-jsonwebtoken
 
 This is a demo application illustrating various features used in everyday web development, with a fine touch of best practices. 
 
 ## Table of contents:
 
 - [ ] auth
+- [x] jsonwebtoken
 - [x] log
 - [ ] mysql
 - [ ] docker
@@ -19,7 +20,7 @@ This is a demo application illustrating various features used in everyday web de
 ## Install
 
 ```sh
-git clone git://github.com/AbbetWang/express-starter.git
+git clone git://github.com/AbbetWang/express-jsonwebtoken.git
 yarn 
 yarn dev
 ```
