@@ -15,6 +15,7 @@ const authMiddleWare = async (req, res, next) => {
     } catch (err) {
       // err
       console.error(err)
+      return res.status(500).json({ message: `${JSON.stringify(err)}` })
     }
     // get token and verify token valid or not
     // get user information and add info to req such as token, userid, username, isAdmin?
