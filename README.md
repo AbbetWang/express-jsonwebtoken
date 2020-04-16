@@ -4,7 +4,7 @@ This is a demo application illustrating various features used in everyday web de
 
 ## Table of contents:
 
-- [ ] auth
+- [x ] a2uth
 - [x] jsonwebtoken
 - [x] log
 - [ ] mysql
